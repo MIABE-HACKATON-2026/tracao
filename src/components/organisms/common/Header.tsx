@@ -8,7 +8,7 @@ const Header = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <div className="w-full px-16 py-6 fixed flex items-center justify-between text-[14px] font-normal leading-3.5 text-cocoa">
+        <div className="w-full px-16 py-6 z-1100 fixed flex items-center justify-between text-[14px] font-normal leading-3.5 text-cocoa">
             <Link to="/">
                 <img src="./logo.svg" alt="Tracao logo" />
             </Link>
