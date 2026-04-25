@@ -1,6 +1,6 @@
 const BuildFor = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center relative p-16 gap-10">
+    <div id="build-for" className="w-full h-screen flex flex-col items-center justify-center relative p-16 gap-10">
       <img src="./logo-tiny.png" alt="" />
       <div className="max-w-[740px] text-[48px] font-medium leading-[54px] text-cocoa text-center">
         Conçu pour chaque acteur de l'écosystème cacao

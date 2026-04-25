@@ -1,6 +1,6 @@
 const Solution = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center p-16">
+    <div id="solution" className="w-full h-screen flex flex-col items-center justify-center p-16">
       <div className="w-full h-full flex flex-col items-center justify-center gap-10">
         <img src="./logo-own.png" alt="" />
         <div className="max-w-[612px] text-[48px] leading-[64px] font-medium text-cocoa text-center">Relier la production locale à la conformité mondiale</div>

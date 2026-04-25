@@ -1,6 +1,6 @@
 const HowItWork = () => {
   return (
-    <div className="flex flex-col items-start gap-16 h-screen p-16">
+    <div id="how-it-works" className="flex flex-col items-start gap-16 h-screen p-16">
       <div className="max-w-[364px] text-[32px] leading-[42px] 2xl:max-w-[420px] 2xl:text-[36px] 2xl:leading-[46px] font-medium  text-cocoa">De la ferme à l'export, entièrement traçable</div>
       <div className="flex flex-col gap-5 w-full">
         <div className="w-full h-[56px] 2xl:h-[15vh] grid grid-cols-5">

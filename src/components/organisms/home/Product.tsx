@@ -1,6 +1,6 @@
 const Product = () => {
   return (
-    <div className="w-full h-screen p-16">
+    <div id="product" className="w-full h-screen p-16">
       <div className="w-full h-full p-5 flex flex-col items-center justify-between bg-roast-10 rounded-r10">
         <div className="max-w-[700px] text-[48px] font-medium text-cocoa text-center">
           Une plateforme conçue pour les conditions réelles

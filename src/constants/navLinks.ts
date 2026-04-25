@@ -2,17 +2,15 @@ import type { NavLinkI } from "../types/NavLink";
 
 const navLinks: NavLinkI[] = [
     {
-        label: "Product",
+        label: "Produit",
         has_dropdown: true,
         dropdown: [
-            {
-                label: "Items 1",
-                link: "#"
-            },
-            {
-                label: "Items 2",
-                link: "#"
-            }
+            { label: "La solution",          link: "/#solution" },
+            { label: "Comment ça marche",    link: "/#how-it-works" },
+            { label: "La plateforme",        link: "/#product" },
+            { label: "Réglementation EUDR",  link: "/#eudr" },
+            { label: "Qui est concerné",     link: "/#build-for" },
+            { label: "Impact",               link: "/#impact" },
         ],
         open: false
     },
