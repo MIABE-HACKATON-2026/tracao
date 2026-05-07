@@ -1,19 +1,26 @@
+import { useTranslation } from "react-i18next"
+import UsersIcon from "../../icons/UsersIcon"
+
 const Problem = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="flex flex-col items-start gap-16 h-screen p-16">
-      <div className="max-w-[364px] text-[32px] leading-[42px] 2xl:max-w-[420px] 2xl:text-[36px] 2xl:leading-[46px] font-medium  text-cocoa">Un système non préparé aux exigences mondiales</div>
-      <div className="flex flex-col gap-5 w-full">
-        <div className="w-full h-[185px] 2xl:h-[20vh] border border-2 border-cocoa rounded-r7 pl-20 py-2 pr-2 flex items-center justify-between">
-          <div className="text-[#000] text-[26px] leading-[42px]">Absence de système national de traçabilité</div>
-          <div className="h-full"><img src="./demand1.png" className="h-full" alt="" /></div>
+    <div className="w-full min-h-[832px] md:min-h-[832px] py-16 md:py-0 px-6">
+      <div className="w-full max-w-[1080px] min-h-[832px] mx-auto flex flex-col items-center justify-center gap-8 md:gap-16">
+        <div className="w-full flex flex-col md:flex-row md:justify-between gap-8">
+          <div className="max-w-[545px] text-[32px] leading-[40px] md:text-[54px] md:leading-[60px] font-semibold text-cocoa text-center md:text-left">{t('problem.title')}</div>
+          <div className="flex flex-col gap-6 items-center md:items-end max-w-full md:max-w-[446px]">
+            <div className="text-center md:text-end text-[16px] leading-[28px] font-normal">{t('problem.subtitle')}</div>
+            <div className="cursor-pointer py-1 pl-[22px] pr-[6px] bg-cocoa h-11 rounded-[24px] flex items-center justify-center gap-4 w-fit">
+              <div className="text-white text-[16px]">{t('problem.button')}</div>
+              <div className="h-8 w-8 bg-white flex items-center justify-center rounded-[28px]"><UsersIcon /></div>
+            </div>
+          </div>
         </div>
-        <div className="w-full h-[185px] 2xl:h-[20vh] border border-2 border-cocoa rounded-r7 pl-20 py-2 pr-2 flex items-center justify-between">
-          <div className="text-[#000] text-[26px] leading-[42px]">Collecte de données sur papier</div>
-          <div className="h-full"><img src="./demand2.png" className="h-full" alt="" /></div>
-        </div>
-        <div className="w-full h-[185px] 2xl:h-[20vh] border border-2 border-cocoa rounded-r7 pl-20 py-2 pr-2 flex items-center justify-between">
-          <div className="text-[#000] text-[26px] leading-[42px]">Risques de fraude et de commerce illicite</div>
-          <div className="h-full"><img src="./demand3.png" className="h-full" alt="" /></div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-cocoa-5 rounded-[24px] h-[200px] md:h-[322px]"></div>
+          <div className="bg-cocoa-5 rounded-[24px] h-[200px] md:h-[322px]"></div>
+          <div className="bg-cocoa-5 rounded-[24px] h-[200px] md:h-[322px]"></div>
         </div>
       </div>
     </div>

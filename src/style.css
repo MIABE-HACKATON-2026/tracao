@@ -118,11 +118,6 @@
     --color-blue-10: rgba(var(--blue), 0.1);
     --color-blue-5: rgba(var(--blue), 0.05);
 
-
-
-
-
-
     /* BASE */
     --spacing-p0: 0px;
     --spacing-p1: 2px;
@@ -150,10 +145,6 @@
     --spacing-p23: 384px;
     --spacing-p24: 448px;
     --spacing-p25: 500px;
-
-
-
-
 
     --size-s0: 0px;
     --size-s1: 4px;
@@ -303,11 +294,6 @@
     --border-ss19: 19px;
     --border-ss20: 20px;
 
-
-
-
-
-
     --radius-r0: 0px;
     --radius-r0-5: 2px;
     --radius-r1: 4px;
@@ -330,5 +316,54 @@
     --radius-r18: 72px;
     --radius-r19: 76px;
     --radius-r20: 80px;
+}
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Hide scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Firefox support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* Animation Défilement Infini (Marquee) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
