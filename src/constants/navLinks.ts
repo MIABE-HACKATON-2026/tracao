@@ -2,31 +2,34 @@ import type { NavLinkI } from "../types/NavLink";
 
 const navLinks: NavLinkI[] = [
     {
-        label: "Produit",
+        label: "nav.product",
         has_dropdown: true,
         dropdown: [
-            { label: "La solution",          link: "/#solution" },
-            { label: "Comment ça marche",    link: "/#how-it-works" },
-            { label: "La plateforme",        link: "/#product" },
-            { label: "Réglementation EUDR",  link: "/#eudr" },
-            { label: "Qui est concerné",     link: "/#build-for" },
-            { label: "Impact",               link: "/#impact" },
+            { label: "nav.solution",          link: "/#solution" },
+            { label: "nav.how_it_works",    link: "/#how-it-works" },
+            { label: "nav.platform",        link: "/#product" },
+            { label: "nav.eudr",  link: "/#eudr" },
+            { label: "nav.who_is_concerned",     link: "/#build-for" },
+            { label: "nav.impact",               link: "/#impact" },
         ],
         open: false
     },
     {
-        label: "Uses Cases",
+        label: "nav.use_cases",
         link: "#"
     },
     {
-        label: "Ressouces",
+        label: "nav.scan_qr",
         link: "#"
     },
     {
-        label: "About",
+        label: "nav.resources",
+        link: "#"
+    },
+    {
+        label: "nav.about",
         link: "#"
     }
 ];
-
 
 export default navLinks;

@@ -1,27 +1,19 @@
-import BuildFor from "../components/organisms/home/BuildFor"
-import Context from "../components/organisms/home/Context"
-import CTAFinal from "../components/organisms/home/CTAFinal"
-import EUDREmergency from "../components/organisms/home/EUDREmergency"
+import Actors from "../components/organisms/home/Actors"
+import Band from "../components/organisms/home/Band"
+import CTA from "../components/organisms/home/CTA"
 import Hero from "../components/organisms/home/Hero"
-import HowItWork from "../components/organisms/home/HowItWork"
-import Impact from "../components/organisms/home/Impact"
 import Problem from "../components/organisms/home/Problem"
-import Product from "../components/organisms/home/Product"
 import Solution from "../components/organisms/home/Solution"
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen bg-harvest">
+    <div className="w-full min-h-screen bg-white">
       <Hero />
-      <Context />
       <Problem />
-      <EUDREmergency />
       <Solution />
-      <HowItWork />
-      <BuildFor />
-      <Impact />
-      <Product />
-      <CTAFinal />
+      <Actors />
+      <CTA />
+      <Band />
     </div>
   )
 }

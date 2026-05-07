@@ -47,3 +47,6 @@ export { default as UserAttributesIcon } from "./UserAttributesIcon";
 export { default as UserIcon } from "./UserIcon";
 export { default as UsersIcon } from "./UsersIcon";
 export { default as WhatsappIcon } from "./WhatsappIcon";
+export { default as MenuIcon } from "./MenuIcon";
+export { default as CloseIcon } from "./CloseIcon";
+export { default as GlobeIcon } from "./GlobeIcon";
