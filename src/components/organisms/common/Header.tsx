@@ -17,6 +17,8 @@ const Header = () => {
 
     const currentLang = i18n.language?.startsWith('fr') ? 'FR' : 'EN';
 
+    const app_url = import.meta.env.VITE_APP_URL ? import.meta.env.VITE_APP_URL : 'https://localhost:5174'
+
     return (
         <>
             <div className={cn(
@@ -85,10 +87,10 @@ const Header = () => {
                     <GlobeIcon className="size-4" />
                     <span className="font-medium">{currentLang}</span>
                 </button>
-                <Link to='/login' className="flex items-center gap-1">
+                    <Link to={`${app_url}/login`} className="flex items-center gap-1">
                     {t('header.login')}
                 </Link>
-                <Link to='/login' className="flex items-center gap-1 text-white px-3 h-full rounded-[25px] bg-cocoa">
+                    <Link to={`${app_url}/register`} className="flex items-center gap-1 text-white px-3 h-full rounded-[25px] bg-cocoa">
                     {t('header.create_account')}
                     <UserIcon className="fill-white" />
                 </Link>
@@ -146,10 +148,10 @@ const Header = () => {
                     <GlobeIcon className="size-5" />
                     <span>{t('header.lang_label')} : {currentLang === 'FR' ? 'Français' : 'English'}</span>
                 </button>
-                <Link to='/login' className="flex items-center justify-center gap-2 text-cocoa p-2 rounded-full text-[16px] font-medium" onClick={() => setIsMenuOpen(false)}>
+                    <Link to={`${app_url}/login`} className="flex items-center justify-center gap-2 text-cocoa p-2 rounded-full text-[16px] font-medium" onClick={() => setIsMenuOpen(false)}>
                     {t('header.login')}
                 </Link>
-                <Link to='/login' className="flex items-center justify-center gap-2 text-white p-4 rounded-full bg-cocoa text-[16px] font-medium" onClick={() => setIsMenuOpen(false)}>
+                    <Link to={`${app_url}/register`} className="flex items-center justify-center gap-2 text-white p-4 rounded-full bg-cocoa text-[16px] font-medium" onClick={() => setIsMenuOpen(false)}>
                     {t('header.create_account')}
                     <UserIcon className="fill-white size-5" />
                 </Link>
